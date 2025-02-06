@@ -1,8 +1,13 @@
 import React from 'react'
+import StarsCanvas from './Stars'
+
 
 const Intro = () => {
   return (
-    <div>Intro</div>
+    <div className='flex h-screen items-center justify-center' >
+    <StarsCanvas />
+    <div>Main page</div>
+    </div>
   )
 }
 
