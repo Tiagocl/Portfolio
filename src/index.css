@@ -13,8 +13,12 @@
 
 @layer utilities {
     .background-text { 
-        background-color: #040715;
+        background-color: #040014;
         color: white;
+    }
+
+    .top-hole {
+        top: calc(100% - 800px);
     }
 }
 
