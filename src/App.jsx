@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
-import Motivation from "./components/Motivation";
+import Motivation from "./Pages/Motivation";
 import StarsCanvas from "./components/Stars";
-import Portfolio from "./components/Portfolio";
+import Portfolio from "./Pages/Portfolio";
 import { motion, AnimatePresence } from "framer-motion";
 
 
