@@ -3,7 +3,7 @@ import { Instagram, Linkedin, Github } from "lucide-react"
 
 const Header = () => {
   return (
-    <div className="fixed z-10 text-md h-14 flex justify-center items-center w-full ">
+    <div className=" fixed z-10 text-md h-14 flex justify-center items-center w-full ">
         <div className="flex justify-between items-center w-[90%] max-w-7xl bg-black/0 backdrop-blur-lg rounded-4xl py-2 px-5">
           <a href="#"><span className="w-[143px] text-[#e5e7eb] tracking-wide font-semibold pl-4">Tiago Lourenço</span></a>
 

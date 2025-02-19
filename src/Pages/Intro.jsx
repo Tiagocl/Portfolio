@@ -2,13 +2,19 @@ import React from "react";
 import StarsCanvas from "../components/Stars";
 
 import Header from "../components/Header";
+import Hero from "../components/Hero";
 
 const Intro = () => {
   return (
     <>
-      <Header />
+      
+        <Header />
+       
+        <Hero />
 
-      <div className="h-screen w-screen relative overflow-hidden">
+
+
+      <div className="h-screen w-screen z-[-2] relative  overflow-hidden">
         <StarsCanvas />
         <video
           autoPlay
