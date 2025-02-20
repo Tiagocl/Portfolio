@@ -12,7 +12,7 @@ const Header = () => {
             <a className="hover:text-[#8a50ff] transition" href="https://www.skills.com">About me</a>
             <a className="hover:text-[#8a50ff] transition" href="https://www.skills.com">Skills</a>
             <a className="hover:text-[#8a50ff] transition" href="https://www.skills.com">Projects</a>
-            <a className="hover:text-[#8a50ff] transition" href="public/CVatualizado.pdf" download>Resume</a>
+            <a className="hover:text-[#8a50ff] transition" href="public/CVatualizado.pdf" download="Resume.pdf">Resume</a>
       
           </div>
 
