@@ -5,7 +5,7 @@ const Header = () => {
 
   const handleDownload = async () => {
     try {
-      const response = await fetch('/files/myresume.pdf');
+      const response = await fetch('public/blackhole.webm');
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
