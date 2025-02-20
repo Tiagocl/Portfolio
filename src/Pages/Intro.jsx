@@ -22,7 +22,7 @@ const Intro = () => {
           loop
           className="rotate-180 z-[-2] absolute top-8 w-full h-full object-cover -translate-y-[48%]"
         >
-          <source src="src/assets/blackhole.webm" type="video/webm" />
+          <source src="public/blackhole.webm" type="video/webm" />
         </video>
       </div>
 
