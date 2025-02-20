@@ -3,23 +3,6 @@ import { Instagram, Linkedin, Github } from "lucide-react"
 
 const Header = () => {
 
-  const handleDownload = async () => {
-    try {
-      const response = await fetch('blackhole.webm');
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'Resume.pdf'; // Forces the download
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-    } catch (error) {
-      console.error('Download failed:', error);
-    }
-  };
-  
-  
   
   return (
     <div className=" fixed z-10 text-md h-14 flex justify-center items-center w-full ">
@@ -31,8 +14,7 @@ const Header = () => {
             <a className="hover:text-[#8a50ff] transition" href="https://www.skills.com">About me</a>
             <a className="hover:text-[#8a50ff] transition" href="https://www.skills.com">Skills</a>
             <a className="hover:text-[#8a50ff] transition" href="https://www.skills.com">Projects</a>
-            {/* <a className="hover:text-[#8a50ff] transition" href="public/CVatualizado.pdf" download="Resume.pdf">Resume</a> */}
-            <button onClick={handleDownload}>Download Resume</button>
+            <a className="hover:text-[#8a50ff] transition" href="CVatualizado.pdf" download="Resume.pdf">Resume</a>
       
           </div>
 
