@@ -24,7 +24,7 @@ const App = () => {
   }, [showIntro]);
 
   return (
-    <div className="background-text">
+    <div className="background-text overflow-x-hidden ">
       <AnimatePresence>
         {showIntro && (
           <motion.div
@@ -42,7 +42,7 @@ const App = () => {
       <AnimatePresence>
         {showMainpage && (
           <motion.div
-            className="w-screen h-screen"
+            className="w-dvw h-dvh"
             key="portfolio"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

@@ -4,9 +4,10 @@ import Intro from './Intro'
 
 const Portfolio = () => {
   return (
-    <div className=' relative z-0 background-text'>
+    <main className='relative z-0 background-text '>
     <Intro />
-    </div>
+   
+    </main>
   )
 }
 
