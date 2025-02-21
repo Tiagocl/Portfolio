@@ -50,5 +50,17 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
+    .contact-button {
+        background: linear-gradient(180deg, rgba(60, 8, 126, 0), rgba(60, 8, 126, .32)), rgba(113, 47, 255, .12);
+        box-shadow: inset 0 0 12px #bf97ff3d;
+        transition: all 0.3s ease;
+    }
+
+    .contact-button:hover {
+        background: linear-gradient(180deg, rgba(60, 8, 126, 0), rgba(60, 8, 126, .42)), rgba(113, 47, 255, .24);
+        box-shadow: inset 0 0 12px #bf97ff70;
+    }
+
 }
 
