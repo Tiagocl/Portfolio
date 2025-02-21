@@ -14,7 +14,7 @@ const Intro = () => {
           autoPlay
           muted
           loop
-          className="rotate-180 -z-2 absolute inset-0 top-8 w-full h-full object-cover -translate-y-[48%]"
+          className="rotate-180 -z-2 absolute inset-0 top-8 w-full h-full object-cover -translate-y-[49%] "
         >
           <source src="blackhole.webm" type="video/webm" />
         </video>
