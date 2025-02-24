@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
         <div className="w-[700px] h-[165px] text-[#e5e7eb] text-[50px] leading-13 text-center
       lg:text[50px] 
-      xl:text-[60px] xl:h-[200px] xl:w-full xl:leading-15 2xl:text-[70px] 2xl:h-[350px] 2xl:w-full 2xl:leading-20"
+      xl:text-[57px] xl:h-[200px] xl:w-full xl:leading-15 2xl:text-[65px] 2xl:h-[350px] 2xl:w-full 2xl:leading-18"
         >
           <span className=''>Good design is more than </span>
           <br />

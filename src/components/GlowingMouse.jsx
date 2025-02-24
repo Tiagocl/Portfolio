@@ -19,12 +19,12 @@ const GlowingMouse = () => {
     <motion.div 
     className='fixed top-0 left-0 w-6 h-6 bg-purple-700 rounded-full blur-sm pointer-events-none '
     animate= {{
-        x: position.x ,
+        x: position.x,
         y: position.y,
     }}
     transition= {{
         type: 'spring',
-        stiffness: 200,
+        stiffness: 500,
         damping: 20,
     }}
     >
