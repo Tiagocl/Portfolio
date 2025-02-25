@@ -24,7 +24,7 @@ const GlowingMouse = () => {
     }}
     transition= {{
         type: 'spring',
-        stiffness: 500,
+        stiffness: 700,
         damping: 20,
     }}
     >

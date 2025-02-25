@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { div } from 'framer-motion/client';
+import GradientSpan from './GradientSpan';
 import PurpleTag from './PurpleTag';
 
 const Hero = () => {
@@ -20,8 +20,7 @@ const Hero = () => {
             just pixels, it's an
           </span>
           <br />
-          <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500
-          to-cyan-500'>experience.</span>
+          <GradientSpan text="experience." />
 
         </div>
         <div className="text-[#9CA3AF] xl:text-2xl text-xl w-[90%] tracking-wide text-center">
