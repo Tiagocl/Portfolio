@@ -2,6 +2,8 @@ import React from 'react'
 import Intro from './Intro'
 import GlowingMouse from '../components/GlowingMouse'
 import Skills from './Skills'
+import Projects from './Projects'
+
 const Portfolio = () => {
 
   return (
@@ -10,6 +12,7 @@ const Portfolio = () => {
     <GlowingMouse />
     <Intro />
     <Skills />
+    <Projects />
     </main>
   )
 }
