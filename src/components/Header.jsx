@@ -14,7 +14,7 @@ const Header = () => {
           <a className="transition-colors" href="https://www.skills.com">About me</a>
           <a className="transition-colors" href="https://www.skills.com">Skills</a>
           <a className="transition-colors" href="https://www.skills.com">Projects</a>
-          <a className="transition-colors" href="CVatualizado.pdf" download="Resume.pdf">Resume</a>
+          <a className="transition-colors" href="/Resume.pdf" download>Resume</a>
 
         </div>
 
