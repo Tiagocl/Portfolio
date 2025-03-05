@@ -1,6 +1,5 @@
 import React from 'react'
 import StarsCanvas from '../components/Stars'
-import GradientSpan from '../components/GradientSpan'
 import PurpleTag from '../components/PurpleTag'
 import ProjectCard from '../components/ProjectCard'
 
