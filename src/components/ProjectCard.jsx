@@ -4,7 +4,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const ProjectCard = ({image,title,description,technologies}) => {
   return (
-    <div className="flex flex-col gap-5 w-[105%] -translate-x-5 h-[410px] bg-[#040014] rounded-2xl p-5 shadow-2xl border border-white/[0.1]">
+    <div className="flex flex-col gap-5 w-full  h-[410px] bg-[#040014] rounded-2xl p-5 shadow-2xl border border-white/[0.1]">
       <img src={image} alt={title} className='w-full h-48 object-cover rounded-md' />
 
       <div className='flex flex-col gap-7'>

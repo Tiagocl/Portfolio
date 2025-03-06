@@ -42,7 +42,7 @@ const App = () => {
       <AnimatePresence>
         {showMainpage && (
           <motion.div
-            className="w-dvw h-dvh"
+            className="w-dw h-dh"
             key="portfolio"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
