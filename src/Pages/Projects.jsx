@@ -39,7 +39,7 @@ const Projects = () => {
 const container = useRef(null);
 const { scrollYProgress } = useScroll({
   target: container,
-  offset: ["start end", "end, start"],
+  offset: ["start 50%", "end end"],
 });
 
 const scaleY = useSpring(scrollYProgress, {
