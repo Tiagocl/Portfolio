@@ -24,7 +24,7 @@ const Hero = () => {
 
         </div>
         <div className="text-[#9CA3AF] xl:text-2xl text-xl w-[90%] tracking-wide text-center">
-          <span class>Hi! I'm Tiago, a Web Developer based in Portugal.</span>
+          <span>Hi! I'm Tiago, a Web Developer based in Portugal.</span>
 
         </div>
         {/* <div>

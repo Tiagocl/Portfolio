@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectIcon from './ProjectIcon'
+import { GoArrowUpRight } from "react-icons/go";
 
 const ProjectCard = ({image,title,description,technologies}) => {
   return (
@@ -12,7 +13,8 @@ const ProjectCard = ({image,title,description,technologies}) => {
 
       <p className='text-[#BEC1DD] font-light tracking-wide w-full '>{description}</p>
       </div>
-      <div className='flex items-center '>
+      <div className='flex justify-between items-center '>
+        <div className='flex'>
         {technologies.map((tech,index) => (
           <div
           key={index}
@@ -21,6 +23,12 @@ const ProjectCard = ({image,title,description,technologies}) => {
           <ProjectIcon technology={tech} />
           </div>
         ))}
+        </div>
+        <a
+        className='text-[#C7A9F5] font-medium text-[19px] tracking-wide' 
+        href="https://github.com/Tiagocl/Spotify-Clone">Check Project 
+        <GoArrowUpRight size={22} className='inline-block ml-1' />
+        </a>
       </div>
       </div>
     </div>

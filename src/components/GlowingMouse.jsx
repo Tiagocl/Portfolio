@@ -17,7 +17,7 @@ const GlowingMouse = () => {
 
   return (
     <motion.div 
-    className='fixed top-0 left-0 w-6 h-6 bg-purple-700 rounded-full blur-sm pointer-events-none '
+    className='fixed top-0 left-0 w-5 h-5 bg-purple-700 rounded-full blur-sm pointer-events-none '
     animate= {{
         x: position.x,
         y: position.y,

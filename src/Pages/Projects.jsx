@@ -2,9 +2,9 @@ import React from 'react'
 import StarsCanvas from '../components/Stars'
 import PurpleTag from '../components/PurpleTag'
 import ProjectCard from '../components/ProjectCard'
+import { useScroll,motion} from 'framer-motion'
 
 const Projects = () => {
-
   const projects = [
   {
     image: 'https://placehold.co/150',
@@ -34,9 +34,10 @@ const Projects = () => {
  
 ];
   return (
-    <div className='relative h-[200vh] w-screen overflow-hidden'>
+    <div className='relative h-[300vh] w-screen overflow-hidden'>
         <StarsCanvas />
-
+        <StarsCanvas />
+        <StarsCanvas />
         <div className='h-full w-[90%] flex flex-col justify-start items-center m-auto mt-24 gap-6'>
             {/* <GradientSpan text="My Projects." /> */}
             <PurpleTag  text="Projects i worked on " width="175"/>
@@ -57,7 +58,7 @@ const Projects = () => {
                   ))}
                   
                 </div>
-                <div className='w-[7%] h-full bg-blue-400'>
+                <div className='w-[2%] h-full '>
 
                 </div>
                 <div className='w-[40%] h-full bg-green-400 flex flex-col gap-6'>
