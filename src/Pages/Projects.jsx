@@ -2,7 +2,7 @@ import React, {memo, useRef} from 'react'
 import StarsCanvas from '../components/Stars'
 import PurpleTag from '../components/PurpleTag'
 import ProjectCard from '../components/ProjectCard'
-import { useScroll,motion,useMotionValueEvent } from 'motion/react'
+import { useScroll,motion,useMotionValueEvent,useSpring } from 'motion/react'
 
 
 const Projects = () => {
@@ -39,6 +39,13 @@ const Projects = () => {
 const container = useRef(null);
 const { scrollYProgress } = useScroll({
   target: container,
+  offset: ["start end", "end, start"],
+});
+
+const scaleY = useSpring(scrollYProgress, {
+  stiffness: 400,
+  damping:90,
+  restDelta: 0.001,
 });
 
 useMotionValueEvent(scrollYProgress,"change", (value) => {
@@ -63,8 +70,16 @@ useMotionValueEvent(scrollYProgress,"change", (value) => {
               <ProjectCard key={`left-${index}`} {...project} />
             ))}
               </div>
-              <div className='h-full w-[1%] bg-gradient-to-b from-purple-500
-          to-cyan-500 rounded-full' />
+              <motion.div 
+              className='h-full w-[1%] bg-gradient-to-b from-purple-500
+          to-cyan-500 rounded-full' 
+          style={{
+            scaleY,
+            transformOrigin: "top",
+            top: 0,
+            position: "sticky",
+          }}
+          />
               
               <div className=' w-[40%] flex flex-col gap-32 mt-40'>
               {projects.slice(2, 4).map((project, index) => (
