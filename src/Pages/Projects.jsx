@@ -46,6 +46,7 @@ const scaleY = useSpring(scrollYProgress, {
   stiffness: 400,
   damping:90,
   restDelta: 0.001,
+ 
 });
 
 useMotionValueEvent(scrollYProgress,"change", (value) => {
@@ -54,8 +55,8 @@ useMotionValueEvent(scrollYProgress,"change", (value) => {
 );
 
   return (
-    <div ref={container} className='relative h-[210vh] w-screen'>
-        {/* <StarsCanvas /> */}
+    <div ref={container} className='relative h-[230vh] w-screen overflow-hidden'>
+         <StarsCanvas /> 
 
         <div className='h-full w-[90%] flex flex-col justify-start items-center m-auto mt-24 gap-6'>
             {/* <GradientSpan text="My Projects." /> */}
