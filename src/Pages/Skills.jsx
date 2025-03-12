@@ -10,7 +10,7 @@ import TechIcon from '../components/TechIcon';
 const Skills = () => {
   return (
     <div className='relative h-[80vh]  w-screen overflow-hidden'>
-      <StarsCanvas />
+      {/* <StarsCanvas /> */}
       <div className='h-full w-[90%] flex flex-col justify-start items-center m-auto mt-24 text-[#e5e7eb] text-[50px] gap-10'>
         {/* <GradientSpan text="About me" /> */}
         <div className='flex flex-col justify-start items-center gap-5'>

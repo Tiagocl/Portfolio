@@ -5,10 +5,10 @@ import PurpleTag from './PurpleTag';
 
 const Hero = () => {
 
-  const string = 'Web Developer';
+
   return (
-    <div className='relative z-20 flex justify-center items-center w-full h-80 transform translate-y-[35vh] xl:translate-y-[32vh]'>
-      <div className="flex flex-col h-80 justify-start items-center gap-5  ">
+    <div className='relative z-20 flex justify-center items-center w-full h-screen transform translate-y-[35vh] xl:translate-y-[32vh]'>
+      <div className="flex flex-col h-full justify-start items-center gap-5  ">
         <PurpleTag text="Frontend Developer Portfolio" width="224" />
         <div className="w-[700px] h-[165px] text-[#e5e7eb] text-[50px] leading-13 text-center
       lg:text[50px] 
@@ -27,11 +27,6 @@ const Hero = () => {
           <span>Hi! I'm Tiago, a Web Developer based in Portugal.</span>
 
         </div>
-        {/* <div>
-      <button 
-      onClick={() => window.location.href = 'mailto:tiagocamposlourenco@gmail.com?subject=Let’s%20Work%20Together&body=Hi Tiago,'}
-      className='py-2 contact-button text-center text-white cursor-pointer rounded-lg w-[200px]'>Contact me</button>
-      </div> */}
 
       </div>
 

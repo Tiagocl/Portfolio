@@ -6,7 +6,7 @@ import { div } from "framer-motion/client";
 const Intro = () => {
   return (
     
-    <div className="relative h-[85vh] w-screen overflow-hidden">
+    <div className="relative h-screen w-screen overflow-hidden">
     
       <div className="h-screen w-screen -z-10 absolute inset-0 overflow-hidden">
         <StarsCanvas />

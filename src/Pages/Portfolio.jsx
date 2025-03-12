@@ -11,7 +11,7 @@ const Portfolio = () => {
     <main className='relative z-0 background-text '>
     <GlowingMouse />
     <Intro />
-    <Skills />
+    {/* <Skills /> */}
     <Projects />
     </main>
   )

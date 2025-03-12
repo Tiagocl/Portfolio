@@ -72,8 +72,8 @@ useMotionValueEvent(scrollYProgress,"change", (value) => {
             ))}
               </div>
               <motion.div 
-              className='h-full w-[1%] bg-gradient-to-b from-purple-500
-          to-cyan-500 rounded-full' 
+              className='h-full w-[0.5%] bg-gradient-to-b from-purple-500
+          to-cyan-500 rounded-full shadow-[0_0_15px_rgba(139,92,246,0.8),0_0_30px_rgba(34,211,238,0.8)] ' 
           style={{
             scaleY,
             transformOrigin: "top",
