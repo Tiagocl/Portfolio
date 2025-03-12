@@ -1,9 +1,18 @@
 import React from 'react'
 import ProjectIcon from './ProjectIcon'
 import { GoArrowUpRight } from "react-icons/go";
+import { Tilt } from 'react-tilt'
 
 const ProjectCard = ({image,title,description,technologies}) => {
   return (
+    <Tilt
+     options={{
+        reverse: true,
+        max: 25,
+        scale: 1,
+        speed: 0,
+        
+     }}>
     <div className="flex flex-col gap-5 w-full  h-[410px] bg-[#040014] rounded-2xl p-5 shadow-2xl border border-white/[0.1]">
       <img src={image} alt={title} className='w-full h-48 object-cover rounded-md' />
 
@@ -32,6 +41,7 @@ const ProjectCard = ({image,title,description,technologies}) => {
       </div>
       </div>
     </div>
+    </Tilt>
   )
 }
 

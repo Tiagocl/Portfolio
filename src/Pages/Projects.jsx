@@ -3,9 +3,7 @@ import StarsCanvas from '../components/Stars'
 import PurpleTag from '../components/PurpleTag'
 import ProjectCard from '../components/ProjectCard'
 import { useScroll, motion, useMotionValueEvent, useSpring } from 'motion/react'
-import { X } from 'lucide-react'
-import { transition } from 'three/examples/jsm/tsl/display/TransitionNode.js'
-import { easeIn } from 'motion'
+
 
 
 const Projects = () => {
@@ -65,7 +63,7 @@ const Projects = () => {
 
     visible: {
       opacity: 1,
-      x:0,
+      x: 0,
       transition: {
         duration: 0.7,
         ease: "easeOut",
@@ -81,7 +79,7 @@ const Projects = () => {
 
     visible: {
       opacity: 1,
-      x:0,
+      x: 0,
       transition: {
         duration: 0.7,
         ease: "easeOut",
@@ -113,10 +111,11 @@ const Projects = () => {
                   once: true,
                   amount: 0.3,
                 }}
-                >
-              <ProjectCard  {...project} />
+              >
+                <ProjectCard  {...project} />
               </motion.div>
             ))}
+
           </div>
           <motion.div
             className='h-full w-[0.5%] bg-gradient-to-b from-purple-500
@@ -140,8 +139,8 @@ const Projects = () => {
                   once: true,
                   amount: 0.3,
                 }}
-                >
-              <ProjectCard key={`right-${index}`} {...project} />
+              >
+                <ProjectCard key={`right-${index}`} {...project} />
               </motion.div>
             ))}
           </div>
