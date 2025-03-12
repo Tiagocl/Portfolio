@@ -42,7 +42,7 @@ const Projects = () => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
-    offset: ["start 50%", "end end"],
+    offset: ["start 60%", "end end"],
   });
 
   const scaleY = useSpring(scrollYProgress, {
@@ -67,7 +67,7 @@ const Projects = () => {
       opacity: 1,
       x:0,
       transition: {
-        duration: 0.8,
+        duration: 0.7,
         ease: "easeOut",
       }
     },
@@ -83,7 +83,7 @@ const Projects = () => {
       opacity: 1,
       x:0,
       transition: {
-        duration: 0.8,
+        duration: 0.7,
         ease: "easeOut",
       }
     },
@@ -91,7 +91,7 @@ const Projects = () => {
 
 
   return (
-    <div ref={container} className='relative h-[230vh] w-screen overflow-hidden'>
+    <div ref={container} className='relative h-[250vh] 2xl:h-[160vh] w-screen overflow-hidden'>
       {/* <StarsCanvas />  */}
 
       <div className='h-full w-[90%] flex flex-col justify-start items-center m-auto  gap-6'>
@@ -102,7 +102,7 @@ const Projects = () => {
         </span>
 
         <div className='w-full flex justify-center items-start gap-5 mt-10'>
-          <div className=' w-[40%] flex flex-col gap-32'>
+          <div className=' w-[40%] flex flex-col gap-42'>
             {projects.slice(0, 2).map((project, index) => (
               <motion.div
                 key={`left-${index}`}
@@ -129,7 +129,7 @@ const Projects = () => {
             }}
           />
 
-          <div className=' w-[40%] flex flex-col gap-32 mt-40'>
+          <div className=' w-[40%] flex flex-col gap-42 mt-70'>
             {projects.slice(2, 4).map((project, index) => (
               <motion.div
                 key={`right-${index}`}
